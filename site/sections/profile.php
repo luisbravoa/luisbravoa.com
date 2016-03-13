@@ -7,11 +7,10 @@
             <p class="section-subtitle">Full-stack Web Developer</p>
         </header>
         <div class="row">
-            <div class="col-md-3">
+
+            <div class="col-md-12">
                 <div class="profile"><img src="img/pic.jpg" alt="profile"/>
                 </div>
-            </div>
-            <div class="col-md-9">
 
                 <p>I’ll start by telling you a little bit about myself, I’m venezuelan currently living in Athlone,
                     Ireland. Working in Ericsson Software Campus in the UI SDK team developing libraries and

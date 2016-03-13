@@ -12,7 +12,7 @@
             <ul class="nav navbar-nav" id="main-menu">
                 <li><a href="#main">Home</a></li>
                 <li><a href="#profile">Profile</a></li>
-                <li><a href="#skills">Skills</a></li>
+<!--                <li><a href="#skills">Skills</a></li>-->
                 <li><a href="http://blog.luisbravoa.com" class="external">Blog</a></li>
 <!--                <li><a href="#education">Education</a></li>-->
 <!--                <li><a href="#experience">Experience</a></li>-->
