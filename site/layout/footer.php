@@ -11,6 +11,7 @@
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/contact_me.js"></script>
 <script src="js/main.js"></script>
+<script src="js/portfolio.js"></script>
 
 </body>
 

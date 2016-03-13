@@ -48,13 +48,13 @@ $(document).ready(function() {
 
 
     /* Magnific Popup */
-    $('.grid-wrapper').magnificPopup({
-        delegate: 'a',
-        type: 'image',
-        gallery: {
-            enabled: true
-        }
-    });
+    //$('.grid-wrapper').magnificPopup({
+    //    delegate: 'a',
+    //    type: 'image',
+    //    gallery: {
+    //        enabled: true
+    //    }
+    //});
 
 
     /* Sticky menu */
@@ -94,27 +94,6 @@ $(document).ready(function() {
         triggerOnce: true,
         offset: 'bottom-in-view'
     });
-
-
-    /* VEGAS Home Slider */
-//
-//	    $('#main').vegas({
-//        slides: [
-//            { src: 'img/slider/01.jpg' },
-//            { src: 'img/slider/02.jpg' },
-//            { src: 'img/slider/03.jpg' },
-//			{ src: 'img/slider/04.jpg' }
-//        ],
-//    overlay: true
-//});
-//
-//    $("#vegas-next").click(function() {
-//        $('#main').vegas('next');
-//    });
-//    $("#vegas-prev").click(function() {
-//       $('#main').vegas('previous');
-//    });
-
 
 
 });

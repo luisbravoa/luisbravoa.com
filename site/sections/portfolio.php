@@ -1,121 +1,138 @@
+<?php require('site/sections/data.php'); ?>
 <section id="portfolio" class="page-portfolio">
     <div class="container">
         <div class="row">
             <header class="section-header">
                 <h2 class="section-title"><span>Portfolio</span></h2>
+
                 <div class="spacer"></div>
-                <p class="section-subtitle">Lorem ipsum dolor sit amet, id iusto oportere mel. </p>
             </header>
 
             <div id="grid-controls-wrapper">
                 <ul class="nav nav-pills center-pills grid-controls">
                     <li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a>
                     </li>
-                    <li class="filter"><a href="javascript:void(0)" data-filter=".branding">Branding</a>
+                    <li class="filter"><a href="javascript:void(0)" data-filter=".projects">Projects</a>
                     </li>
-                    <li class="filter"><a href="javascript:void(0)" data-filter=".design">Design</a>
+                    <li class="filter"><a href="javascript:void(0)" data-filter=".work">Work</a>
                     </li>
-                    <li class="filter"><a href="javascript:void(0)" data-filter=".photography">Photography</a>
-                    </li>
-                    <li class="filter"><a href="javascript:void(0)" data-filter=".web">Website</a>
+                    <li class="filter"><a href="javascript:void(0)" data-filter=".code">Code Samples</a>
                     </li>
                 </ul>
             </div>
 
             <div>
                 <ul id="grid" class="grid-wrapper">
-                    <li class="mix web">
-                        <a href="img/portfolio/large/01.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/01.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix design">
-                        <a href="img/portfolio/large/02.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/02.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix design">
-                        <a href="img/portfolio/large/03.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/03.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix web">
-                        <a href="img/portfolio/large/04.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/04.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix branding">
-                        <a href="img/portfolio/large/05.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/05.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix design">
-                        <a href="img/portfolio/large/06.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/06.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix photography">
-                        <a href="img/portfolio/large/07.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/07.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix photography">
-                        <a href="img/portfolio/large/08.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/08.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix photography">
-                        <a href="img/portfolio/large/09.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/09.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix web">
-                        <a href="img/portfolio/large/10.jpg">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/10.jpg" alt="">
-                        </a>
-                    </li>
-                    <li class="mix design">
-                        <a href="img/portfolio/large/11.jpg">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/11.jpg" alt="">
-                        </a>
-                    </li>
-                    <li class="mix design">
-                        <a href="img/portfolio/large/12.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/12.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix design">
-                        <a href="img/portfolio/large/13.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/13.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix design">
-                        <a href="img/portfolio/large/14.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/14.png" alt="">
-                        </a>
-                    </li>
-                    <li class="mix branding">
-                        <a href="img/portfolio/large/15.png">
-                            <div class="overlay"><i class="fa fa-search"></i>
-                            </div><img src="img/portfolio/small/15.png" alt="">
-                        </a>
-                    </li>
+
+                    <?php
+                    foreach ($items as $index => $item) {
+                        $image_small = "img/portfolio/". $item['img_small'];
+                        $image = "img/portfolio/". $item['img'];
+                        ?>
+                        <li class="mix <?= $item['type']; ?>">
+                            <a href="#portfolio-<?= $index; ?>" class="open-popup-link">
+                                <div class="overlay"><i class="fa fa-search"></i>
+                                </div>
+                                <img src="<?= $image_small; ?>" alt="<?= $item['title']; ?>">
+                            </a>
+
+                            <div id="portfolio-<?= $index; ?>" class="portfolio-overlay white-popup mfp-hide no-padding" style="min-width: 80%; min-height: 80%;">
+                                    <div  id="portfolio-info">
+                                        <h2><?= $item['title']; ?></h2>
+                                        <h3><?= $item['short_description']; ?></h3>
+                                        <div>
+                                            <?= $item['description']; ?>
+                                        </div>
+                                        <ul id="portfolio-links">
+                                            <li><a href="<?= $item['urls']['web']; ?>" target="_blank">Visit Website <i class="fa fa-link "></i></a></li>
+                                            <?php if(isset($item['urls']['github'])){?>
+                                            <li><a href="<?= $item['urls']['github']; ?>" target="_blank">Visit GitHub <i class="fa fa-github-alt "></i></a></li>
+                                            <?php }?>
+                                        </ul>
+                                    </div>
+                                <div id="portfolio-img">
+                                    <a href="<?= $item['urls']['web']; ?>" target="_blank"><img src="<?= $image; ?>" title="<?= $item['title']; ?>"></a>
+                                </div>
+
+                            </div>
+                        </li>
+
+
+
+                    <?php } ?>
+
                 </ul>
             </div>
+        </div>
+        <div class="row">
+            <style>
+                .white-popup {
+                    position: relative;
+                    background: #FFF;
+                    padding: 20px;
+                    width: auto;
+                    max-width: 500px;
+                    margin: 20px auto;
+                }
+                .no-padding{
+                    padding: 0;
+                }
+
+                .portfolio-overlay{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+
+                #portfolio-img {
+                    overflow: hidden;
+                    background-color: #191e23;
+                    width: 60%;
+                    /*border-left: 1px #323232 solid;*/
+                }
+                #portfolio-info {
+                    padding: 10px;
+                    width: 40%;
+                }
+
+                #portfolio-info h2, h3 {
+                    padding: 0;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+
+                @media (max-width: 900px) {
+                    .portfolio-overlay{
+                        display: block;
+                    }
+                    #portfolio-img {
+                        width: 100%;
+                    }
+                    #portfolio-info {
+                        width: 100%;
+                    }
+                }
+
+                #portfolio-links{
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+                #portfolio-links li{
+                    display: inline-block;
+                    font-size: 14px;
+                    margin: 10px;
+                    background-color: #9a0000;
+                    color: white;
+                    padding: 15px;
+                }
+                #portfolio-links li a {
+                    color: white;
+
+                }
+            </style>
         </div>
     </div>
 </section>

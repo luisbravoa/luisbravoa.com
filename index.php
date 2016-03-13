@@ -9,6 +9,6 @@ error_reporting(E_ALL);
 //    require('site/sections/skills.php');
 //    require('site/sections/education.php');
 //    require('site/sections/experience.php');
-//    require('site/sections/portfolio.php');
+    require('site/sections/portfolio.php');
     require('site/sections/contact.php');
     require('site/layout/footer.php');
