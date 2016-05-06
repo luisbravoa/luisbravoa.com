@@ -88,4 +88,17 @@ $items = [
             "github" => "https://github.com/luisbravoa/Flickr-gallery-in-backbone.js"
         )
     ),
+
+    array(
+        "img" => "bugs.png",
+        "img_small" => "bugs_small.png",
+        "title" => "Bug System",
+        "type" => "code",
+        "short_description" => "Bug System",
+        "description" => "<p>Bug tracking application developed Node.js (express.js) and Angular.js client.</p>",
+        "urls" => array(
+            "web" => "http://bugs-luisbravoa.rhcloud.com",
+            "github" => "https://github.com/luisbravoa/bug-system"
+        )
+    ),
 ];
