@@ -63,6 +63,20 @@ $items = [
             "web" => "http://annettepalmar.com"
         )
     ),
+
+    array(
+        "img" => "flickr-gallery-in-react.png",
+        "img_small" => "flickr-gallery-in-react_small.png",
+        "title" => "Flickr Gallery in React",
+        "type" => "code",
+        "short_description" => "Photo gallery",
+        "description" => "<p>This a photo gallery that uses the flickr API, it allows you to browse recent photos and also search.</p>",
+        "urls" => array(
+            "web" => "http://luisbravoa.com/sandbox/Flickr-gallery-in-react-js",
+            "github" => "https://github.com/luisbravoa/Flickr-gallery-in-react-js"
+
+        )
+    ),
     array(
         "img" => "flickr-gallery-in-angular.png",
         "img_small" => "flickr-gallery-in-angular_small.png",
