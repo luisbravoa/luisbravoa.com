@@ -72,7 +72,7 @@ $items = [
         "short_description" => "Photo gallery",
         "description" => "<p>This a photo gallery that uses the flickr API, it allows you to browse recent photos and also search.</p>",
         "urls" => array(
-            "web" => "http://luisbravoa.com/sandbox/Flickr-gallery-in-react-js",
+            "web" => "http://luisbravoa.com/sandbox/Flickr-gallery-in-react.js",
             "github" => "https://github.com/luisbravoa/Flickr-gallery-in-react-js"
 
         )
