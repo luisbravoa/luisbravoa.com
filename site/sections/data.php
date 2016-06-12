@@ -65,6 +65,19 @@ $items = [
     ),
 
     array(
+        "img" => "some-college.png",
+        "img_small" => "some-college_small.png",
+        "title" => "Some College",
+        "type" => "code",
+        "short_description" => "Sample application",
+        "description" => "<p>Full stack sample application, the user interface allows users to enroll to courses and provide a visual representation of the schedule.</p> <p>Server side is created using PHP and Laravel 5 framework, it implements a restful API. Client side is implemented in javascript, css and html, using React and Redux.</p>",
+        "urls" => array(
+            "web" => "http://luisbravoa.com/sandbox/some-college-client/",
+            "github" => "https://github.com/luisbravoa/some-college-client"
+
+        )
+    ),
+    array(
         "img" => "flickr-gallery-in-react.png",
         "img_small" => "flickr-gallery-in-react_small.png",
         "title" => "Flickr Gallery in React",
