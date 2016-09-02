@@ -2,6 +2,20 @@
 
 $items = [
     array(
+        "img" => "codigolive.png",
+        "img_small" => "codigolive_small.png",
+        "title" => "CODIGO.LIVE (WebApp)",
+        "type" => "projects",
+        "short_description" => "Online coding tool designed for remote collaboration and interview coding exercises.",
+        "description" => "
+        <p>The client side of this project I implemented using <a href=\"https://facebook.github.io/react/\" target=\"_blank\">ReactJS</a> along with <a href=\"http://redux.js.org/\" target=\"_blank\">Redux</a> and <a href=\"http://socket.io\" target=\"_blank\">Socket.io</a> for the Web Sockets implementation. For the server side, I created a rest API using <a href=\"https://nodejs.org/\" target=\"_blank\">Node.js</a>, <a href=\"https://expressjs.com/\" target=\"_blank\">Express.js</a> framework, <a href=\"http://mongoosejs.com/\" target=\"_blank\">mongoose</a> as the ORM to connect to the <a href=\"https://www.mongodb.com/\" target=\"_blank\">mongodb</a> database and <a href=\"http://socket.io/\" target=\"_blank\">socket.io</a> to establish the connection with the client.</p>",
+        "urls" => array(
+            "web" => "http://codigo.live",
+            "github" => "https://github.com/luisbravoa/codigo.live",
+            "blog" => "http://blog.luisbravoa.com/2016/09/01/codigo-live-online-coding-tool-designed-for-remote-collaboration-and-interview-coding-exercises/"
+        )
+    ),
+    array(
         "img" => "pickatuneapp.png",
         "img_small" => "pickatuneapp_small.png",
         "title" => "Pickatune (App)",

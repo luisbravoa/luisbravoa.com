@@ -48,6 +48,9 @@
                                             <?php if(isset($item['urls']['github'])){?>
                                             <li><a href="<?= $item['urls']['github']; ?>" target="_blank">Visit GitHub <i class="fa fa-github-alt "></i></a></li>
                                             <?php }?>
+                                            <?php if(isset($item['urls']['blog'])){?>
+                                            <li><a href="<?= $item['urls']['blog']; ?>" target="_blank">Blog Post</a></li>
+                                            <?php }?>
                                         </ul>
                                     </div>
                                 <div id="portfolio-img">
